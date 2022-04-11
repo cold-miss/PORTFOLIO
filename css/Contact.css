@@ -1,0 +1,377 @@
+
+/* 마우스 텍스트 */
+
+section {
+    position: relative;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+section .mousetext {
+    position: absolute;
+    color: #000;
+    font-size: 10px;
+    user-select: none;
+    pointer-events: none;
+    animation: animate 7.5s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+section .mousetext span{
+    display: inline-block;
+    top: -50px;
+    text-transform: uppercase;
+    position: absolute;
+    transform-origin: 0 50px;
+}    
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* cursor: none; */
+    margin: 0 auto;
+}
+
+
+.main-header {
+     max-width: 1440px;
+     width: 100%;
+     height: 85px;
+     margin: 0 auto;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     overflow: hidden;
+}
+
+.header-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-header .logo {
+    float: left;
+    margin-right: 50px;
+}
+
+.main-header .gnb{
+
+}
+
+.main-header .gnb ul{
+    display: flex;
+    justify-content: center;
+}
+
+.main-header .gnb ul li{
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+.main-header .gnb ul li span{
+    margin-left: 30px;
+    color: #000;
+}
+
+/* main */
+
+main h2 {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    transition: 0.5s;
+    padding-bottom: 100px;
+
+}   
+
+.sci {
+    position: relative;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    
+}
+
+.sci li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 120px));
+    font-size: 14vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sci li:hover::before {
+    opacity: 0.1;
+    transform: translate(-50%,calc(-50% + 150px));
+    font-size: 50px;
+    transition-timing-function: ease;
+}
+
+.sci li:nth-child(3):hover::before {
+    opacity: 0.1;
+    transform: translate(-50%,calc(-20% + 100px));
+    font-size: 50px;
+    transition-timing-function: ease;
+}
+
+.sci li:nth-child(2):hover::before {
+    opacity: 0.1;
+    transform: translate(-35%,calc(-20% + 100px));
+    font-size: 50px;
+    transition-timing-function: ease;
+    width: 800px;
+}
+
+.sci li:nth-child(4):hover::before {
+    opacity: 0.1;
+    transform: translate(-20%,calc(-20% + 100px));
+    font-size: 50px;
+    transition-timing-function: ease;
+    width: 1000px;
+}
+
+.sci li a {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background-repeat: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25;
+    background: #fff;
+}
+
+.sci li a:hover.e-mail {
+    background: #a1dbfb;
+}
+.sci li a:hover.phone {
+    background: #c0c0c0;
+}
+.sci li a:hover.instagram {
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+}
+.sci li a:hover.kakotalk {
+    background: #ffd63f;
+}
+
+.sci li a .fa {
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sci li a:hover .fa {
+    color: #fff;
+}
+
+
+/* sitemap-modal  */
+
+
+.sitemap-modal {
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    top: 130px;
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+
+
+.sitemap-modal.on {
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 700px;
+    top: 130px;
+}
+
+.sitemap-modal > ul {
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 80px 164px;
+    background: #fff;
+    border: 2px solid #858585;
+
+}
+
+.sitemap-modal > ul li span {
+    position: absolute;
+    right: 0;
+}
+
+.sitemap-modal > ul > li{
+    width: calc(100%/4);
+    float: left;
+    font-size: 30px;
+    /* outline: 1px solid red; */
+    position: relative;
+    margin-left: 70px;
+}
+
+.sitemap-modal > ul > li:first-child{
+    /* margin-left: 0; */
+}
+
+.sitemap-modal .sitemap-sub {
+    margin-top: 60px;
+    display: block;
+}
+
+.sitemap-modal .sitemap-sub li{
+    margin-bottom: 17px;
+}
+
+.sitemap-modal .sitemap-sub > li > a {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sitemap-modal .sitemap-sub > li:hover > a {
+    font-weight: 700;
+    color: #858585;
+}
+
+
+/* footer */
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .footer-wrap {
+    width: 45%;
+    display: flex;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-wrap h3 {
+    font-size: 24px;
+    font-weight: 500px;
+    color: #555;
+}
+
+footer .footer-wrap h3 > span{
+    margin-left: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+footer .phone {
+
+}
+
+footer .phone > p,
+.email > p{
+    margin-left: 20px;
+}
+
+
+/* detail-modal */
+
+.window-gray {
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: none;
+}
+
+.window-gray.on {
+    display: block;
+}
+
+.detail-modal {
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    /* display: none; */
+    margin: 0 auto;
+    overflow-y: scroll;
+    border: 1px solid rgb(217, 216, 216);
+    display: none;
+}
+
+.detail-modal.on {
+    display: block;
+}
+
+.detail-modal img{
+    width: 100%;
+}
+

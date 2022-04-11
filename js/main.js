@@ -141,6 +141,28 @@ $(function(){
     road.style.top = value * 0.15 + 'px';
     text.style.top = value * 1 + 'px';
     
+    })
+
+    let list = document.querySelectorAll('.sci li');
+    let bg1 = document.querySelector('body');
+    list.forEach(elements => {
+        elements.addEventListener('mouseenter', function 
+       (event){ 
+           let color = event.target.getAttribute('data-color');
+           bg1.style.backgroundColor = color;
+    })
+    elements.addEventListener('mouseleave', function 
+       (event){ 
+           bg1.style.backgroundColor = '#fff';
+    })
+
+    VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+		max: 20,
+		speed: 800,
+        easing:"cubic-bezier(.03,.98,.52,.99)",
+	});
+    
 })
+    
  
 });
