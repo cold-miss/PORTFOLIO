@@ -11,7 +11,7 @@
 
     a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         /* cursor: none; */
     }
 
@@ -41,7 +41,7 @@
     
     section .mousetext {
         position: absolute;
-        color: #000;
+        color: #fff;
         font-size: 10px;
         user-select: none;
         pointer-events: none;
@@ -120,6 +120,7 @@
 
     .main-header .gnb ul li span{
         margin-left: 30px;
+        color: #fff;
     }
 
     /* trial */
@@ -519,7 +520,6 @@
     .sitemap-modal.on {
         display: block;
         width: 100%;
-        background: #fff;
         height: 700px;
         top: 80px;
     }
@@ -533,8 +533,8 @@
         overflow: hidden;
         margin: 0 auto;
         padding: 80px 164px;
-        background: #fff;
-        border: 2px solid #858585;
+        background: linear-gradient(to bottom, rgb(16, 45, 67, 0.9), #0a2a43 100%, transparent);
+        border: 2px solid #fff;
 
     }
 
@@ -602,7 +602,7 @@
     footer .footer-wrap h3 {
         font-size: 24px;
         font-weight: 500px;
-        color: #555;
+        color: #fff;
     }
 
     footer .footer-wrap h3 > span{
@@ -624,6 +624,7 @@
     footer .phone > p,
     .email > p{
         margin-left: 20px;
+        color: #fff;
     }
 
 
@@ -677,7 +678,6 @@
     .aboutme-bgcolor {
         background: #0a2a43;
         min-height: 1500px;
-        color: ;
     }
     
     .dalbam {
@@ -711,7 +711,7 @@
         pointer-events: none;
     }
     
-    #text {
+    #text1 {
         position: relative;
         color: #fff;
         font-size: 10em;
