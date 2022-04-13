@@ -132,14 +132,13 @@
         color: #fff;
     }
 
-    /* main */  
-
     main {
         margin: 0 auto;
         width: 100%;
         max-width: 1440px;
     }
 
+    
 
     /* content */
 
@@ -437,7 +436,6 @@
 
     footer {
         width: 100%;
-        max-width : 1440px;
         height: 80px;
         /* outline: 2px solid red; */
         margin: 0 auto;
