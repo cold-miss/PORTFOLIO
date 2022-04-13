@@ -658,9 +658,10 @@
     }
 
 
-    .dalbam p {
+    .dalbam-title p {
         z-index: 1;
         font-family: 'LeferiBaseType-RegularA';
+        line-height: 1.6em
     }
     
     #road {
