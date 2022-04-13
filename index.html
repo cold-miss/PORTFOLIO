@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>about me</title>
+    <!-- FONT BELLOTA font-family: 'Bellota Text', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" 
-    href="./css/mobile.css" 
-    media="screen and (max-width:767px)">
+    <!-- FONT- NOKORA  font-family: 'Nokora', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- FONT- NOTOSAN SKR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONT - ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
     href="./css/pc.css" 
     media="screen and (min-width:768px)">
@@ -17,202 +22,139 @@
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous">
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="./js/main.js"></script>
-
 </head>
 <body>
 
+    <div class="aboutme-bgcolor">
+
+     
     <!-- mousetext -->
     <section>
         <h2 class="mousetext">Thank-you-for-visiting-me</h2>
     </section>
-
+    
     <div id="wrap">
         <header class="main-header">
-            <div class="header-wrap">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./img/PORTFOLIO_logo_barcode.svg" alt="logo">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/PORTFOLIO_logo_barcodeW.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="Aboutme.html">
+                            ABOUT ME
+                        </a><span>|</span>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            PROJECT
+                        </a><span>|</span>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="right-menu">
+                <div class="pc-toggle">
+                    <a href="#">
+                        <img src="./img/toggle_btnW.svg" alt="toggle">
                     </a>
                 </div>
-                <nav class="gnb">
-                    <ul>
-                        <li>
-                            <a href="Aboutme.html">
-                                ABOUT ME
-                            </a><span>|</span>
-                        </li>
-                        <li>
-                            <a href="index.html">
-                                PROJECT
-                            </a><span>|</span>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-    
-                <div class="right-menu">
-                    <div class="pc-toggle">
-                        <a href="#">
-                            <img src="./img/toggle_btn.svg" alt="toggle">
-                        </a>
-                    </div>
-                </div>
             </div>
+
         </header>
-            
-            
-            
-        <div class="trial_index_title">
 
-            <div class="index-title-wrap">
+        <main>
+
+
+            <div class="dalbam">
+                <img src="./img/parallax/bg.jpg" alt="" id="bg">
+                <img src="./img/parallax/moon.png" alt="" id="moon">
+                <img src="./img/parallax/mountain.png" alt="" id="mountain">
+                <img src="./img/parallax/road.png" alt="" id="road">
+
+                <div class="dalbam-title">
+                    <h2 id="text1">"좋은 디자인은 보는 사람으로 하여금 더 알아보고 싶게 만든다."<br><span>-알렉산더 이슬리</span></h2>
+
+                    <p>
+                        안녕하세요. 모두가 즐겁게 이용할 수 있는 웹사이트를
+                        만들기 위해 노력하는 <br> 'YANG HYE HYUN'입니다
+                    </p>
+                </div>
                 
-                <div class="trial_index s1">
-                    <div class="info wrap">
-                        <h2>website</h2>
-                        <p>DAILY<br>NATURE</p>
-                        <div class="index_barcode">
+            </div>
+
+            <div class="trial_index_title">
+
+                <div class="index-title-wrap">
+                    
+                    <div class="trial_index s1">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>WEBSITE</h2>
+                                <p>DAILY<br>NATURE</p>
+                                <div class="index_barcode">
+                                    <a href="#">
+                                        <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                                
+                        </div>
+    
+                        <div class="index_action">
+    
+                            <p>
+                                하루야채로 건강한 습관을 추구하는 <br>  비건 쇼핑몰 메인 페이지와 로고를 제작해보았습니다.
+                            </p>
+                            
                             <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
+                                <img src="./img/daily_nature/daily_nature_mockup.png" alt="">
+                            </a>
+    
+                            <a href="#" class="detail-btn n1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Detail
                             </a>
                         </div>
-                        
-                        <div class="index-content">
-                            작업기간: 1일 <br>
-                            작업툴 : 피그마,포토샵...
+    
+                    </div>
+    
+                    <div class="trial_index s2">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>WEBSITE</h2>
+                            <p>한마음<br>동물보호센터</p>
+                            <div class="index_barcode">
+                                <a href="#">
+                                    <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                </a>
+                            </div>
+                            
+                            </div>
                         </div>
-                        
-                    </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            하루야채로 건강한 습관을 추구하는 <br>  비건 쇼핑몰 메인 페이지와 로고를 제작해보았습니다.
-                        </p>
-                        
-                        <a href="#">
-                            <img src="./img/daily_nature/daily_nature_mockup.png" alt="">
-                        </a>
-
-                        <a href="#" class="detail-btn1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="trial_index s2">
-                    <div class="info wrap">
-                        <h2>website</h2>
-                        <p>한마음<br>동물보호센터</p>
-                        <div class="index_barcode">
+    
+                        <div class="index_action">
+    
+                            <p>
+                                사람과 동물의 유대감과, 따뜻한 마음을 파스텔톤의 색으로, 동물과 사람간의 마음을 로고로 제작해 웹사이트 안에 표현해 보았습니다.
+                            </p>
+    
                             <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
+                                <img src="./img/hanmaeum/hanmaeum_mockup.png" alt="">
                             </a>
-                        </div>
-                        
-                        <div class="index-content">
-                            작업기간: 1일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
-                    </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            사람과 동물의 유대감과, 따뜻한 마음을 파스텔톤의 색으로,<br> 동물과 사람간의 마음을 로고로 제작해 웹사이트 안에 표현해<br> 보았습니다.
-                        </p>
-
-                        <a href="#">
-                            <img src="./img/hanmaeum/hanmaeum.png" alt="">
-                        </a>
-
-                        <a href="#" class="detail-btn2">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
-                        
-                    </div>
-
-                </div>
-
-                <div class="trial_index s3">
-                    <div class="info wrap">
-                        <h2>website</h2>
-                        <p>SYNCOPY</p>
-                        <div class="index_barcode">
-                            <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
-                            </a>
-                        </div>
-                        
-                        <div class="index-content">
-                            작업기간: 3일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
-                        
-                    </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            영화제작사 SYNCOPY페이지를 각색해 보았습니다.<br> 해당영화사의 정보와 영화소식, 뉴스, 매거진 메뉴등을<br> 담아 보았습니다.
-                        </p>
-                        
-                        <a href="#">
-                            <img src="./img/syncopy/syncopy_mockup.png" alt="">
-                        </a>
-
-                        <a href="#" class="detail-btn3">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
-                        
-                    </div>
-
-                </div>
-
-                <div class="trial_index s4">
-                    <div class="info wrap">
-                        <h2>website</h2>
-                        <p>NATIONAL<br>GEOGRAPHIC</p>
-                        <div class="index_barcode">
-                            <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
-                            </a>
-                        </div>
-                        
-                        <div class="index-content">
-                            작업기간: 1일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
-                    </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            내셔널 지오그래픽 홈페이지를 각색해 보았습니다.<br>간단한 사이드 메뉴로 접근성을 높이고 브랜드의 사진을<br> 메뉴의 컨셉에 맞게 배치해보았습니다.
-                        </p>
-                        
-                        <a href="#">
-                            <img src="./img/national/national_mockup.png" alt="">
-
-                            <a href="#" class="detail-btn4">
+    
+                            <a href="#" class="detail-btn n2">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -220,179 +162,325 @@
                                 Detail
                             </a>
                             
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="trial_index s5">
-                    <div class="info wrap">
-                        <h2>website</h2>
-                        <p>HANIL</p>
-                        <div class="index_barcode">
-                            <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
-                            </a>
                         </div>
-                        
-                        <div class="index-content">
-                            작업기간: 15일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
+    
                     </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            한일제약 홈페이지를 리뉴얼해보았습니다.<br> &lt;팀프로젝트&gt;로 진행했습니다.
-                        </p>
-
-                        <a href="#">
-                            <img src="./img/hanil/hanil_mockup.png" alt="">
-                        </a>
-
-                        <a href="#" class="detail-btn5">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
+    
+                    <div class="trial_index s3">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>WEBSITE</h2>
+                                <p>SYNCOPY</p>
+                                <div class="index_barcode">
+                                    <a href="#">
+                                        <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
                             
-                    </div>
-
-                </div>
-
-                <div class="trial_index s6">
-                    <div class="info wrap">
-                        <h2>Mobile</h2>
-                        <p>MOBILE<br>INVITATION</p>
-                        <div class="index_barcode">
+                        </div>
+    
+                        <div class="index_action">
+    
+                            <p>
+                                영화제작사 SYNCOPY페이지를 각색해 보았습니다.<br> 해당영화사의 정보와 영화소식, 뉴스, 매거진 메뉴등을<br> 담아 보았습니다.
+                            </p>
+                            
                             <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
+                                <img src="./img/syncopy/syncopy_mockup.png" alt="">
+                            </a>
+    
+                            <a href="#" class="detail-btn n3">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Detail
+                            </a>
+                            
+                        </div>
+    
+                    </div>
+    
+                    <div class="trial_index s4">
+                        <div class="info wrap">
+                                <div class="trial_title_info">
+                                    <h2>WEBSITE</h2>
+                                <p>NATIONAL<br>GEOGRAPHIC</p>
+                                <div class="index_barcode">
+                                    <a href="#">
+                                        <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                    </a>
+                                </div>
+                        </div>
+                            </div>
+    
+                        <div class="index_action">
+    
+                            <p>
+                                내셔널 지오그래픽 홈페이지를 각색해 보았습니다. 간단한 사이드 메뉴로 접근성을 높이고 브랜드의 사진을 <br> 메뉴의 컨셉에 맞게 배치해보았습니다.
+                            </p>
+                            
+                            <a href="#">
+                                <img src="./img/national/national_mockup.png" alt="">
+    
+                                <a href="#" class="detail-btn n4">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Detail
+                                </a>
+                                
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="trial_index s5">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>WEBSITE</h2>
+                            <p>HANIL</p>
+                            <div class="index_barcode">
+                                <a href="#">
+                                    <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                </a>
+                            </div>
+                            
+                        </div>
+                            </div>
+                        <div class="index_action">
+    
+                            <p>
+                                한일제약 홈페이지를 리뉴얼해보았습니다.<br> &lt;팀프로젝트&gt;로 진행했습니다.
+                            </p>
+    
+                            <a href="#">
+                                <img src="./img/hanil/hanilmockup.png" alt="">
+                            </a>
+    
+                            <a href="#" class="detail-btn n5">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Detail
+                            </a>
+                                
+                        </div>
+    
+                    </div>
+    
+                    <div class="trial_index s6">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>MOBILE</h2>
+                                <p>MOBILE<br>INVITATION</p>
+                                <div class="index_barcode">
+                                    <a href="#">
+                                        <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="index_action">
+    
+                            <p>
+                                디자인 벤치마킹을 통해 트랜드에 맞게 콘셉트를 잡고 UX/UI도구를 통해 디자인을 해보았습니다.
+                            </p>
+    
+                            <a href="#">
+                                <img src="./img/mobile-invitation/mobile_invitation_mockup_nobg.png" alt="">
+                            </a>
+    
+                            <a href="#" class="detail-btn n6">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Detail
+                            </a>
+                            
+                        </div>
+    
+                    </div>
+                    
+                    <div class="trial_index s7">
+                        <div class="info wrap">
+                            <div class="trial_title_info">
+                                <h2>MOBILE</h2>
+                                <p>윌라</p>
+                                <div class="index_barcode">
+                                    <a href="#">
+                                        <img src="./img/mainvisual_barcodeW.svg" alt="">
+                                    </a>
+                                </div>
+                            
+                            </div>
+                        </div>
+    
+                        <div class="index_action">
+    
+                            <p>
+                                윌라오디오북의 홍보페이지를 <br>해당 브랜드컬러를 배합해 제작해 보았습니다.
+                            </p>
+                            
+                            <a href="#">
+                                <img src="./img/welaaaa/welaaa_mockup.png" alt="">
+                            </a>
+    
+                            <a href="#" class="detail-btn n7">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Detail
                             </a>
                         </div>
                         
-                        <div class="index-content">
-                            작업기간: 1일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
-                    </div>
+                    </div>    
+                </div>
+                
+            </div>
 
-                    <div class="index_action">
+
+            <!-- <div class="about-info-wrap">
+
+                <div class="about-info title-1">
+                
+                    <h3>"좋은 디자인은 보는 사람으로 하여금 더 알아보고 싶게 만든다."<br><span>-알렉산더 이슬리</span></h3>
+                    
+                </div>
+
+                <div class="about-info title-2">
+
+                    <div class="about-left">
+
+                        <ul>
+                            <li> 양혜현</li>
+                            <li>1990.01.02</li>
+                        </ul>
 
                         <p>
-                            디자인 벤치마킹을 통해 트랜드에 맞게 콘셉트를 잡고 UX/UI도구를 <br>통해 디자인을 해보았습니다.
-                        </p>
+                            신입이라 아직은 많이 부족하지만,<br>
+                            맡은 바 책임을 다하는 성실함을 무기로 좋은 디자인인 동시에 모두가 즐겁게 이용할 수 있는  <br>
+                            웹페이지를 만들고 싶은 목표를 향해 달려나가고 있습니다.<br> 
+                        </p> 
+                    
+                    </div> 
 
-                        <a href="#">
-                            <img src="./img/mobile-invitation/mobile_invitation_mockup.png" alt="">
-                        </a>
 
-                        <a href="#" class="detail-btn6">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
+
+                    <div class="about-info title-3">
+
+                        <h2>SKILLS</h2>
+                        
+                        <div class="percent d1">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>85<span>%</span></h3>
+                            </div>
+                            <div class="text">HTML</div>
+                        </div>
+                        <div class="percent d2">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>82<span>%</span></h3>
+                            </div>
+                            <div class="text">CSS</div>
+                        </div>
+                        <div class="percent d3">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>68<span>%</span></h3>
+                            </div>
+                            <div class="text">JAVA SCRIPT</div>
+                        </div>
+                        <div class="percent d4">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>70<span>%</span></h3>
+                            </div>
+                            <div class="text">PHOTOSHOP</div>
+                        </div>
                         
                     </div>
 
                 </div>
                 
-                <div class="trial_index s7">
-                    <div class="info wrap">
-                        <h2>Mobile</h2>
-                        <p>윌라</p>
-                        <div class="index_barcode">
-                            <a href="#">
-                                <img src="./img/mainvisual_barcode.svg" alt="">
-                            </a>
-                        </div>
-                        
-                        <div class="index-content">
-                            작업기간: 1일 <br>
-                            작업툴 : 피그마,포토샵...
-                        </div>
-                                
-                    </div>
-
-                    <div class="index_action">
-
-                        <p>
-                            윌라오디오북의 홍보페이지를 <br>해당 브랜드컬러를 배합해 제작해 보았습니다.
-                        </p>
-                        
-                        <a href="#">
-                            <img src="./img/welaaaa/welaaa_mockup.png" alt="">
-                        </a>
-
-                        <a href="#" class="detail-btn7">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Detail
-                        </a>
-                    </div>
-                    
-                </div>    
-            </div>
+            </div> -->
             
-        </div>
-        
-        
+        </main>
+    
         <footer>
             <div class="footer-wrap">
                 <h3>Contact<span> | </span></h3>
                 <div class="phone">
-                    <img src="./img/mobile-phone-icon.svg" alt="icon">
+                    <img src="./img/mobile-phone-iconW.svg" alt="icon">
                     <p>010-3304-4620</p>
                 </div>
                 <div class="email">
-                    <img src="./img/e-mail_icon.svg" alt="icon">
+                    <img src="./img/e-mail_iconW.svg" alt="icon">
                     <p>inceptionrose@gmail.com</p>
                 </div>
             </div>
         </footer>
+        
+        <div class="sitemap-modal" >
+            <ul>
+                <li>
+                    <a href="#">ABOUT ME</a>
+                    <span> | </span>
+                </li>
+                <li>
+                    <a href="#">WEBSITE</a> 
+                    <span> | </span>
+                    <ul class="sitemap-sub">
+                        <li><a href="#">Daily nature</a></li>
+                        <li><a href="#">한마음 동물보호센터</a></li>
+                        <li><a href="#">SYNCOPY</a></li>
+                        <li><a href="#">NATIONAL GEOGRAPHY</a></li>
+                        <li><a href="#">HANIL</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">MOBILE</a>
+                    <span> | </span>
+                    <ul class="sitemap-sub">
+                        <li><a href="#">윌라 오디오북</a></li>
+                        <li><a href="#">모바일 청첩장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">BANNER</a>
+                    <ul class="sitemap-sub">
+                        <li><a href="#">Tropical Moscato</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
 
-            <div class="sitemap-modal">
-                <ul>
-                    <li>
-                        <a href="Aboutme.html">ABOUT ME</a>
-                        <span> | </span>
-                    </li>
-                    <li>
-                        <a href="#">WEBSITE</a> 
-                        <span> | </span>
-                        <ul class="sitemap-sub">
-                            <li><a href="#">Daily nature</a></li>
-                            <li><a href="#">한마음 동물보호센터</a></li>
-                            <li><a href="#">SYNCOPY</a></li>
-                            <li><a href="#">NATIONAL GEOGRAPHY</a></li>
-                            <li><a href="#">HANIL</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">MOBILE</a>
-                        <span> | </span>
-                        <ul class="sitemap-sub">
-                            <li><a href="#">윌라 오디오북</a></li>
-                            <li><a href="#">모바일 청첩장</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">BANNER</a>
-                        <ul class="sitemap-sub">
-                            <li><a href="#">Tropical Moscato</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </div>
 
-            <div class="window-gray"></div>
+        <!-- Detail-modal -->
+
+        <div class="window-gray"></div>
             <div class="detail-modal 1">
                 <img src="./img/daily_nature/dailynature-info-page.png" alt="">
             </div>
@@ -414,8 +502,13 @@
             <div class="detail-modal 7">
                 <img src="./img/welaaaa/welaaa-info-page.png" alt="">
             </div>
-    
+        
+        
     </div>
-    
+
+       
+        
+    </div>
+
 </body>
-</html> 
+</html>
