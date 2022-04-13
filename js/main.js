@@ -6,6 +6,7 @@ $(function(){
     
     $('.pc-toggle > a').on('click', function(){
         $('.sitemap-modal').toggleClass('on');
+        
     })
 
     // 마우스 이동감지
@@ -77,31 +78,31 @@ $(function(){
 
 
 
-    $('.detail-btn1').on('click', function(){
+    $('.detail-btn.n1').on('click', function(){
         $('.detail-modal.1').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn2').on('click', function(){
+    $('.detail-btn.n2').on('click', function(){
         $('.detail-modal.2').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn3').on('click', function(){
+    $('.detail-btn.n3').on('click', function(){
         $('.detail-modal.3').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn4').on('click', function(){
+    $('.detail-btn.n4').on('click', function(){
         $('.detail-modal.4').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn5').on('click', function(){
+    $('.detail-btn.n5').on('click', function(){
         $('.detail-modal.5').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn6').on('click', function(){
+    $('.detail-btn.n6').on('click', function(){
         $('.detail-modal.6').addClass('on');
         $('.window-gray').addClass('on');
     }) 
-    $('.detail-btn7').on('click', function(){
+    $('.detail-btn.n7').on('click', function(){
         $('.detail-modal.7').addClass('on');
         $('.window-gray').addClass('on');
     }) 
