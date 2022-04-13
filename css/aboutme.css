@@ -155,6 +155,7 @@
     .about-info.licence {
         margin-bottom: 30px;
         font-size: 30px;
+        width: 100% 
         font-family: 'LeferiBaseType-RegularA';
     }
 
